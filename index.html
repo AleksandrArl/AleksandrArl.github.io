@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>JavaScript и jQuery - Глава 11</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- <link rel="stylesheet" href="css/slider.css" /> -->
+	 <link rel="stylesheet" href="css/tabs.css" />
+	 <!-- <link rel="stylesheet" href="css/modal-window.css" /> -->
+  </head>
+  <body>
+  
+    <header><h1>Александр Арловский</h1></header>
+	
+    <div id="share">
+      <a title="контакты"><img src="img/vk.png" width="140" height="50" alt="Поделиться" /></a>
+    </div>
+
+    <div id="share-options">
+	
+      <img src="img/sss.jpg" width="284" height="167" alt="Поделитесь сладкими продуктами Сладкоежки со своими близкими" id="message" />
+      <div id="links"><a href="https://www.facebook.com/profile.php?id=100011426376209" title="facebook"><img src="img/icon-facebook.png" width="30" height="30" alt="Facebook" /></a>
+      <a href="https://vk.com/alexanderarlovski" title="vkontakte"><img src="img/icon-pinterest.png" width="37" height="37" alt="Pinterest" /></a>
+		 <a href="https://www.instagram.com/aleksandr1_arl/" title="instagram"><img src="img/Instagram.png" width="30" height="30" alt="Pinterest" /></a>
+		</div>
+    </div>
+	
+	
+	  <div id="share1">
+      <a title="Немного о себе"><img src="img/zzz.png" width="120" height="120" alt="Поделиться" /></a>
+    </div>
+
+    <div id="share-options1">
+	<img src="img/qqq1.jpg" width="600" height="400" alt="Поделитесь сладкими продуктами Сладкоежки со своими близкими" id="message" /> 
+   </div>
+	
+	
+      <div class="slider">
+        <div class="slide-viewer">
+          <div class="slide-group">
+            <div class="slide slide-1">
+              <img src="img/slide-1.jpg" alt="Александр" width="500px" height="310px" />
+            </div>
+			  <div class="slide slide-2">
+              <img src="img/slide-2.jpg" alt="Александр" width="500px" height="310px" />
+            </div>
+            <div class="slide slide-3">
+              <img src="img/slide-3.jpg" alt="БНТУ" width="500px" height="310px" />
+			</div>
+            <div class="slide slide-4">
+              <img src="img/slide-4.jpg" alt="БНТУ" width="500px" height="310px" />
+            </div>
+            <div class="slide slide-5">
+              <img src="img/slide-5.jpg" alt="startup" width="500px" height="310px" />
+            </div>
+			 <div class="slide slide-6">
+              <img src="img/slide-6.jpg" alt="работа" width="500px" height="310px"/>
+            </div>
+			 <div class="slide slide-7">
+              <img src="img/slide-7.jpg" alt="БНТУ" width="500px" height="310px"/>
+            </div>
+			<div class="slide slide-8">
+              <img src="img/slide-8.png" alt="работа"  width="500px" height="310px"/>
+            </div>
+			<div class="slide slide-9">
+              <img src="img/slide-9.jpg" alt="startup"  width="500px" height="310px"/>
+            </div>
+          </div>
+        </div>
+        <div class="slide-buttons"></div>
+      </div>
+
+
+	   <section class="page">
+
+      <div class="tabs">
+
+        <ul class="tab-list">
+          <li class="active"><a class="tab-control" href="#tab-1"><h3>Образование</h3></a></li>
+          <li>               <a class="tab-control" href="#tab-2"><h3>Опыт работы</h3></a></li>
+          <li>               <a class="tab-control" href="#tab-3"><h3>Дополнительные навыки</h3></a></li>
+       </ul>
+
+        <div class="tab-panel active" id="tab-1">
+           <p>2007 - 2012гг. Белорусский национальный технический университет <br/>
+		   Факультет: Строительный<br/>
+           Специальность: Промышленное и гражданское строительство<br/>
+           Квалификация: Инженер-строитель</p>
+        </div>
+
+        <div class="tab-panel" id="tab-2">
+            <p> 
+			январь 2016 — январь 2017:  РСУ ГП "Минсктранс", прораб<br/>
+			октябрь 2014 — октябрь 2015: OOO "АДС-2000", мастер<br/>
+			июнь 2013 — июнь 2014: Ремонто-строительный филиал Первомайского района ОАО "Минскремстрой", мастер <br/>
+			август 2012 — май 2013: ЧСУП "Cтроительное управление №22" ОАО "Минскпромстрой", мастер<br/>
+			Выполняемая работа:<br/>
+			-составление и подписание актов выполненных работ<br/>
+			-заявка на материалы<br/>
+			-списание материалов <br/>
+			-закрытие заработной платы<br/>
+			-контроль выполненных работ в соответствии с проектной документацией<br/>
+			-организация сдачи объекта в эксплуатацию<br/>
+			-работа с заказчиками, проектировщиками<br/>
+			-заполнение исполнительной документации<br/>
+			</p>
+			
+        </div>
+
+        <div class="tab-panel" id="tab-3">
+            <p>
+			уровень английского: Inеtermediate - B1 <br/>
+			Базовые знания: <br/>
+			HTML5 <br/>
+			CSS3  <br/>
+			JavaScript<br/>
+			jQuery<br/>
+			Ajax<br/>
+			JSON API<br/>
+			AutoCAD<br/>
+			Аdope Photoshop - средний уровень<br/>
+			3Ds Max - начальный уровень<br/>
+			
+			</p>
+        </div>
+		
+      </div>
+
+    </section>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/tabs.js"></script>
+    <script src="js/slider.js"></script>
+	<!-- <script src="js/modal-window.js"></script> -->
+    <!-- <script src="js/modal-init.js"></script> -->
+	<script src="js/modal-window1.js"></script>
+
+  </body>
+</html>
